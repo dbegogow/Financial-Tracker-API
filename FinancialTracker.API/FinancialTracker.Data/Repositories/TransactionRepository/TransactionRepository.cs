@@ -13,11 +13,11 @@ public class TransactionRepository : ITransactionRepository
     public TransactionRepository(AppDbContext data)
         => this.data = data;
 
-    public async Task<Result<IEnumerable<ListTransactionsModel>>> GetAll(string userId)
+    public async Task<Result<IEnumerable<ListTransactionModel>>> GetAll(string userId)
     {
         var transactions = await this.data.Transactions
             .Where(t => t.UserId == userId)
-            .Select(t => new ListTransactionsModel
+            .Select(t => new ListTransactionModel
             {
                 Id = t.Identifier,
                 Amount = t.Amount,
@@ -29,7 +29,7 @@ public class TransactionRepository : ITransactionRepository
             .AsNoTracking()
             .ToListAsync();
 
-        var result = new Result<IEnumerable<ListTransactionsModel>>(transactions);
+        var result = new Result<IEnumerable<ListTransactionModel>>(transactions);
 
         return result;
     }

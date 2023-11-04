@@ -5,5 +5,5 @@ using FinancialTracker.Data.Models.TransactionModels;
 
 public interface ITransactionRepository
 {
-    Task<Result<IEnumerable<ListTransactionsModel>>> GetAll(string userId);
+    Task<Result<IEnumerable<ListTransactionModel>>> GetAll(string userId);
 }
