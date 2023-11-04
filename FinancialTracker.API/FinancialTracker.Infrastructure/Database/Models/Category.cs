@@ -18,5 +18,5 @@ public class Category
     [StringLength(NameMaxLength, MinimumLength = NameMinLength)]
     public string Name { get; set; }
 
-
+    public ICollection<Transaction> Transactions { get; init; } = new HashSet<Transaction>();
 }
