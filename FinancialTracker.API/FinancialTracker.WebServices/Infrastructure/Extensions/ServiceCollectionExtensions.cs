@@ -1,6 +1,6 @@
 ﻿namespace FinancialTracker.WebServices.Infrastructure.Extensions;
 
-using FinancialTracker.Infrastructure.Database;
+using FinancialTracker.Data.Database;
 
 using Microsoft.EntityFrameworkCore;
 

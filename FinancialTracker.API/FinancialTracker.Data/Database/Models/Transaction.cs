@@ -1,10 +1,10 @@
-﻿namespace FinancialTracker.Infrastructure.Database.Models;
+﻿namespace FinancialTracker.Data.Database.Models;
 
 using System.ComponentModel.DataAnnotations;
 
 using Microsoft.EntityFrameworkCore;
 
-using static FinancialTracker.Infrastructure.Database.ValidationConstants.Transaction;
+using static FinancialTracker.Data.Database.ValidationConstants.Transaction;
 
 public class Transaction
 {

@@ -1,8 +1,8 @@
-﻿namespace FinancialTracker.Infrastructure.Database.Models;
+﻿namespace FinancialTracker.Data.Database.Models;
 
 using System.ComponentModel.DataAnnotations;
 
-using static FinancialTracker.Infrastructure.Database.ValidationConstants.TransactionType;
+using static FinancialTracker.Data.Database.ValidationConstants.TransactionType;
 
 public class TransactionType
 {

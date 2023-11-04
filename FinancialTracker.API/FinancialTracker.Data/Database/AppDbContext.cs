@@ -1,6 +1,6 @@
-﻿namespace FinancialTracker.Infrastructure.Database;
+﻿namespace FinancialTracker.Data.Database;
 
-using FinancialTracker.Infrastructure.Database.Models;
+using FinancialTracker.Data.Database.Models;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;

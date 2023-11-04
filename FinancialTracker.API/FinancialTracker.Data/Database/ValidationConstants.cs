@@ -1,4 +1,4 @@
-﻿namespace FinancialTracker.Infrastructure.Database;
+﻿namespace FinancialTracker.Data.Database;
 
 public class ValidationConstants
 {
