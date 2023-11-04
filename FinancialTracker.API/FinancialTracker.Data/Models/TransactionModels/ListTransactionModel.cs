@@ -1,6 +1,6 @@
 ﻿namespace FinancialTracker.Data.Models.TransactionModels;
 
-public class ListTransactionsModel
+public class ListTransactionModel
 {
     public Guid Id { get; init; }
 

@@ -7,7 +7,7 @@ public class Result<T>
     public Result(T data)
         => this.Data = data;
 
-    public T Data { get; set; }
+    public T Data { get; }
 
     public bool IsSuccessful => !this.errors.Any();
 

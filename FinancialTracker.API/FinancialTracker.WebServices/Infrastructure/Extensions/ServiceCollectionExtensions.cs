@@ -2,7 +2,7 @@
 
 using System.Text;
 
-using FinancialTracker.Application.Services.IdentityServices;
+using FinancialTracker.Application.Services.IdentityService;
 using FinancialTracker.Data.Database;
 using FinancialTracker.Data.Database.Models;
 

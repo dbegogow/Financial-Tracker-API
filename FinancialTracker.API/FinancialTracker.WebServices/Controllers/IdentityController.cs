@@ -1,6 +1,6 @@
 ﻿namespace FinancialTracker.WebServices.Controllers;
 
-using FinancialTracker.Application.Services.IdentityServices;
+using FinancialTracker.Application.Services.IdentityService;
 using FinancialTracker.Data.Database.Models;
 using FinancialTracker.WebServices.Infrastructure.Extensions;
 using FinancialTracker.WebServices.Models.RequestModels.IdentityModels;

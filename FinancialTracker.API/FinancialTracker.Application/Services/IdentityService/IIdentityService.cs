@@ -1,4 +1,4 @@
-﻿namespace FinancialTracker.Application.Services.IdentityServices;
+﻿namespace FinancialTracker.Application.Services.IdentityService;
 
 public interface IIdentityService
 {
