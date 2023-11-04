@@ -5,7 +5,7 @@ using static FinancialTracker.Infrastructure.Database.ValidationConstants.User;
 
 namespace FinancialTracker.Infrastructure.Database.Models;
 
-public class Users : IdentityUser
+public class User : IdentityUser
 {
     [Required]
     [StringLength(NameMaxLength, MinimumLength = NameMinLength)]
