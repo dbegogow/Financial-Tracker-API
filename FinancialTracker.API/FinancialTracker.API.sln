@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialTracker.WebService
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialTracker.Data", "FinancialTracker.Data\FinancialTracker.Data.csproj", "{64FD9AF6-6A02-4754-8C28-8A16BEA738E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialTracker.Application", "FinancialTracker.Application\FinancialTracker.Application.csproj", "{A8CCA046-0168-4868-A918-D795FD294080}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{64FD9AF6-6A02-4754-8C28-8A16BEA738E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64FD9AF6-6A02-4754-8C28-8A16BEA738E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64FD9AF6-6A02-4754-8C28-8A16BEA738E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8CCA046-0168-4868-A918-D795FD294080}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8CCA046-0168-4868-A918-D795FD294080}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8CCA046-0168-4868-A918-D795FD294080}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8CCA046-0168-4868-A918-D795FD294080}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
