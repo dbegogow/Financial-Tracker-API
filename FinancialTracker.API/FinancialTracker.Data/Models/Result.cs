@@ -9,6 +9,8 @@ public class Result<T>
 
     public T Data { get; set; }
 
+    public bool IsSuccessful => !this.errors.Any();
+
     public IReadOnlyCollection<string> Errors
         => this.errors;
 
