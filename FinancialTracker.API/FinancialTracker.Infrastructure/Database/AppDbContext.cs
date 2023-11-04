@@ -5,9 +5,9 @@ using FinancialTracker.Infrastructure.Database.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
-public class DbContext : IdentityDbContext<User>
+public class AppDbContext : IdentityDbContext<User>
 {
-    public DbContext(DbContextOptions<DbContext> options)
+    public AppDbContext(DbContextOptions<AppDbContext> options)
         : base(options)
     {
     }
