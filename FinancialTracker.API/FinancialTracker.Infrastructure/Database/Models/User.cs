@@ -1,9 +1,9 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿namespace FinancialTracker.Infrastructure.Database.Models;
+
+using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
 
 using static FinancialTracker.Infrastructure.Database.ValidationConstants.User;
-
-namespace FinancialTracker.Infrastructure.Database.Models;
 
 public class User : IdentityUser
 {

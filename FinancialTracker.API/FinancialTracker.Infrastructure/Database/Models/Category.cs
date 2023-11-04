@@ -1,8 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿namespace FinancialTracker.Infrastructure.Database.Models;
+
+using System.ComponentModel.DataAnnotations;
 
 using static FinancialTracker.Infrastructure.Database.ValidationConstants.Category;
-
-namespace FinancialTracker.Infrastructure.Database.Models;
 
 public class Category
 {
