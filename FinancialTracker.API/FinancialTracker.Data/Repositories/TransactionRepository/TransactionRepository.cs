@@ -1,7 +1,6 @@
 ﻿namespace FinancialTracker.Data.Repositories.TransactionRepository;
 
 using FinancialTracker.Data.Database;
-using FinancialTracker.Data.Models;
 using FinancialTracker.Data.Models.TransactionModels;
 
 using Microsoft.EntityFrameworkCore;
@@ -13,9 +12,8 @@ public class TransactionRepository : ITransactionRepository
     public TransactionRepository(AppDbContext data)
         => this.data = data;
 
-    public async Task<Result<IEnumerable<ListTransactionModel>>> GetAll(string userId)
-    {
-        var transactions = await this.data.Transactions
+    public async Task<IEnumerable<ListTransactionModel>> GetAll(string userId)
+        => await this.data.Transactions
             .Where(t => t.UserId == userId)
             .Select(t => new ListTransactionModel
             {
@@ -25,12 +23,7 @@ public class TransactionRepository : ITransactionRepository
                 Date = t.Date,
                 Category = t.Category.Name,
                 Type = t.TransactionType.Name
-            })
+})
             .AsNoTracking()
             .ToListAsync();
-
-        var result = new Result<IEnumerable<ListTransactionModel>>(transactions);
-
-        return result;
-    }
 }
