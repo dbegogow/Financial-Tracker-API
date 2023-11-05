@@ -15,7 +15,6 @@ public class TransactionService : ITransactionService
     public async Task<ServiceReponseModel<IEnumerable<ListTransactionServiceModel>>> GetAll(string userId)
     {
         var transactions = (await this.transactionRepository.GetAll(userId))
-            .Data
             .Select(t => t.ToListTransactionServiceModel())
             .ToList();
 
