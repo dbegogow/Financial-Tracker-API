@@ -8,6 +8,7 @@ using FinancialTracker.Application.Services.TransactionService;
 using FinancialTracker.Data.Database;
 using FinancialTracker.Data.Database.Models;
 using FinancialTracker.Data.Repositories.TransactionRepository;
+using FinancialTracker.Data.Repositories.CategoryRepository;
 
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -77,7 +78,8 @@ public static class ServiceCollectionExtensions
             .AddScoped<ICurrentUserService, CurrentUserService>()
             .AddTransient<IIdentityService, IdentityService>()
             .AddTransient<ITransactionService, TransactionService>()
-            .AddTransient<ITransactionRepository, TransactionRepository>();
+            .AddTransient<ITransactionRepository, TransactionRepository>()
+            .AddTransient<ICategoryRepository, CategoryRepository>();
 
     public static IServiceCollection AddSwagger(this IServiceCollection services)
         => services.AddSwaggerGen(c =>
