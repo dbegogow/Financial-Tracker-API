@@ -19,7 +19,6 @@ public class TransactionsController : BaseApiController
     }
 
     [HttpGet]
-    [Route(nameof(All))]
     public async Task<IActionResult> All()
     {
         var userId = this.currentUserService.GetId();
