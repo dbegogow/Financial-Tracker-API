@@ -8,8 +8,6 @@ public class Category
 {
     public int Id { get; set; }
 
-    public Guid Identifier { get; set; }
-
     [Required]
     public string UserId { get; set; }
 

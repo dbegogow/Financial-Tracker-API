@@ -8,7 +8,7 @@ public class ListTransactionServiceModel
 
     public string Description { get; init; }
 
-    public DateTime Date { get; init; }
+    public DateTime CreatedAt { get; init; }
 
     public string Category { get; init; }
 

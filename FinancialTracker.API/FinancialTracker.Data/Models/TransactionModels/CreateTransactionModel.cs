@@ -8,11 +8,7 @@ public class CreateTransactionModel
 
     public string Description { get; init; }
 
-    public DateTime Date { get; init; }
+    public int CategoryId { get; init; }
 
-    public Guid CategoryIdentifier { get; init; }
-
-    public Guid TransactionTypeIdentifier { get; init; }
-
-    public DateTime CreatedAt { get; init; }
+    public int TransactionTypeId { get; init; }
 }

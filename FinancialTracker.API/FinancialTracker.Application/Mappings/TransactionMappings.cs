@@ -12,7 +12,7 @@ public static class TransactionMappings
             Id = source.Id,
             Amount = source.Amount,
             Description = source.Description,
-            Date = source.Date,
+            CreatedAt = source.CreatedAt,
             Category = source.Category,
             Type = source.Type
         };
