@@ -6,4 +6,6 @@ using FinancialTracker.Application.Models.TransactionModels;
 public interface ITransactionService
 {
     Task<ServiceReponseModel<IEnumerable<ListTransactionServiceModel>>> GetAll(string userId);
+
+    Task<ServiceReponseModel<bool>> Create(CreateTransactionServiceModel transaction);
 }

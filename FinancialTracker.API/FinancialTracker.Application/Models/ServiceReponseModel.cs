@@ -1,6 +1,6 @@
-﻿using System.Net;
+﻿namespace FinancialTracker.Application.Models;
 
-namespace FinancialTracker.Application.Models;
+using System.Net;
 
 public class ServiceReponseModel<T>
 {
@@ -20,10 +20,13 @@ public class ServiceReponseModel<T>
 
     public T Data { get; }
 
-    public HttpStatusCode StatusCode { get; }
+    public HttpStatusCode StatusCode { get; private set; }
 
     public IReadOnlyCollection<string> Errors
        => this.errors;
+
+    public void SetStatusCode(HttpStatusCode statusCode)
+        => this.StatusCode = statusCode;
 
     public void AddErrors(params string[] messages)
         => this.errors.AddRange(messages);

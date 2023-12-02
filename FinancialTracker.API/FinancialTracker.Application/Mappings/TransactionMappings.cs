@@ -16,4 +16,15 @@ public static class TransactionMappings
             Category = source.Category,
             Type = source.Type
         };
+
+    public static CreateTransactionModel ToCreateTransactionModel(
+        this CreateTransactionServiceModel source)
+        => new CreateTransactionModel
+        {
+            UserId = source.UserId,
+            Amount = source.Amount,
+            Description = source.Description,
+            CategoryId = source.CategoryId,
+            TransactionTypeId = source.TransactionTypeId
+        };
 }
